@@ -13,7 +13,7 @@ The Python script is used to run through a CSV file of relevant Stacks repos and
 Before running the script on your machine, you will need to set your [GitHub personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
 
 ```shell
-GH_TOKEN="<YOUR_GITHUB_TOKEN>"; export GH_TOKEN; python enrich.py
+GITHUB_TOKEN="<YOUR_GITHUB_TOKEN>"; export GITHUB_TOKEN; python enrich.py
 ```
 
 ## Contributions
