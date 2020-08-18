@@ -2,7 +2,7 @@ import os
 import csv
 from github import Github
 
-token = os.environ['GITHUB_TOKEN']
+token = os.environ['GH_TOKEN']
 g = Github(token)
 repos = []
 
