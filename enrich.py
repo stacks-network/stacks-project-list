@@ -23,7 +23,6 @@ with open("github-repos-enriched.csv", mode="w") as csv_file:
         "homepage",
         "forks",
         "stars",
-        "issues",
         "subscribers_count",
         "watchers_count",
         "created_at",
