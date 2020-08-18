@@ -1,7 +1,8 @@
+import os
 import csv
 from github import Github
 
-token = "<GITHUB_ACCESS_TOKEN>"
+token = os.environ['GITHUB_TOKEN']
 g = Github(token)
 repos = []
 
@@ -13,7 +14,7 @@ with open("github-repos.csv") as csvfile:
             repo = g.get_repo(row["Repository"])
             repos.append(repo)
         except:
-            print("Could not find GitHub repository")
+            print("Could not find GitHub repository", row["Repository"])
 
 with open("github-repos-enriched.csv", mode="w") as csv_file:
     fieldnames = [
